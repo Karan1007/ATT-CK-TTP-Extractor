@@ -1,0 +1,42 @@
+Data Source,Description,Link
+DS0026,Active Directory,https://attack.mitre.org/datasources/DS0026
+DS0015,Application Log,https://attack.mitre.org/datasources/DS0015
+DS0041,Application Vetting,https://attack.mitre.org/datasources/DS0041
+DS0039,Asset,https://attack.mitre.org/datasources/DS0039
+DS0037,Certificate,https://attack.mitre.org/datasources/DS0037
+DS0025,Cloud Service,https://attack.mitre.org/datasources/DS0025
+DS0010,Cloud Storage,https://attack.mitre.org/datasources/DS0010
+DS0017,Command,https://attack.mitre.org/datasources/DS0017
+DS0032,Container,https://attack.mitre.org/datasources/DS0032
+DS0038,Domain Name,https://attack.mitre.org/datasources/DS0038
+DS0016,Drive,https://attack.mitre.org/datasources/DS0016
+DS0027,Driver,https://attack.mitre.org/datasources/DS0027
+DS0022,File,https://attack.mitre.org/datasources/DS0022
+DS0018,Firewall,https://attack.mitre.org/datasources/DS0018
+DS0001,Firmware,https://attack.mitre.org/datasources/DS0001
+DS0036,Group,https://attack.mitre.org/datasources/DS0036
+DS0007,Image,https://attack.mitre.org/datasources/DS0007
+DS0030,Instance,https://attack.mitre.org/datasources/DS0030
+DS0035,Internet Scan,https://attack.mitre.org/datasources/DS0035
+DS0008,Kernel,https://attack.mitre.org/datasources/DS0008
+DS0028,Logon Session,https://attack.mitre.org/datasources/DS0028
+DS0004,Malware Repository,https://attack.mitre.org/datasources/DS0004
+DS0011,Module,https://attack.mitre.org/datasources/DS0011
+DS0023,Named Pipe,https://attack.mitre.org/datasources/DS0023
+DS0033,Network Share,https://attack.mitre.org/datasources/DS0033
+DS0029,Network Traffic,https://attack.mitre.org/datasources/DS0029
+DS0040,Operational Databases,https://attack.mitre.org/datasources/DS0040
+DS0021,Persona,https://attack.mitre.org/datasources/DS0021
+DS0014,Pod,https://attack.mitre.org/datasources/DS0014
+DS0009,Process,https://attack.mitre.org/datasources/DS0009
+DS0003,Scheduled Job,https://attack.mitre.org/datasources/DS0003
+DS0012,Script,https://attack.mitre.org/datasources/DS0012
+DS0013,Sensor Health,https://attack.mitre.org/datasources/DS0013
+DS0019,Service,https://attack.mitre.org/datasources/DS0019
+DS0020,Snapshot,https://attack.mitre.org/datasources/DS0020
+DS0002,User Account,https://attack.mitre.org/datasources/DS0002
+DS0042,User Interface,https://attack.mitre.org/datasources/DS0042
+DS0034,Volume,https://attack.mitre.org/datasources/DS0034
+DS0006,Web Credential,https://attack.mitre.org/datasources/DS0006
+DS0024,Windows Registry,https://attack.mitre.org/datasources/DS0024
+DS0005,WMI,https://attack.mitre.org/datasources/DS0005
