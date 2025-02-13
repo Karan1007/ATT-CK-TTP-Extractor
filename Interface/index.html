@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATT&CK TTP Extractor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #c74b4b;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(2, 92, 50, 0.1);
+            background-image: url('halftone-background-with-circles_1226107-152.avif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: white;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #3c3ea1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3207f0;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .card {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #faf7f7;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>ATT&CK TTP Extractor</h1>
+    
+    <input type="file" id="fileInput" accept=".txt,.pdf,.docx">
+    <button onclick="extractTTPs()">Extract ATT&CK TTPs</button>
+    
+    <div id="results" class="result"></div>
+
+    <script>
+        function extractTTPs() {
+    const fileInput = document.getElementById("fileInput");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please upload a file first.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    fetch("http://127.0.0.1:5000/upload", { 
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Response Data:", data);
+
+        // ✅ Display full analysis output correctly
+        document.getElementById("results").innerHTML = `
+            <div class="card"><strong>Threat Summary:</strong> ${data.summary || "No summary available"}</div>
+            <div class="card"><strong>Key Findings:</strong> ${data.key_findings ? data.key_findings.join(", ") : "No findings available"}</div>
+            <div class="card"><strong>Recommended Actions:</strong> ${data.recommended_actions ? data.recommended_actions.join(", ") : "No actions suggested"}</div>
+        `;
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Error processing file.");
+    });
+}
+
+    </script>
+    
+</body>
+</html>
