@@ -62,25 +62,19 @@ Make sure you have the following installed:
    cd attack-ttp-extractor
    ```
 
-2. Install dependencies:
-
-   ```sh
-   pip install -r requirements.txt
-   ```
-
-3. Run the **Flask API**:
+2. Run the **Flask API**:
 
    ```sh
    cd flask
    python app.py
    ```
 
-4. Open the **Web Interface**:
+3. Open the **Web Interface**:
 
    - Open `interface/index.html` in a browser.
    - Upload a security report (PDF/TXT) and analyze it.
 
-5. Fine-tune the model (optional, if retraining is required):
+4. Fine-tune the model (optional, if retraining is required):
 
    ```sh
    cd fine-tuning
