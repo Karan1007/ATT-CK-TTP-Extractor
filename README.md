@@ -22,6 +22,11 @@ This project is an ATT&amp;CK TTP Extractor, designed to scrape, preprocess, bal
 
 The project is organized into 10 folders:
 
+**NOTE:** ***The folder named "Fine-tuning" is not added to the repository as it is a huge folder (>25GB) and cannot be added. But to run this project, the folder is required which you can install from this given Drive Link.*** 
+ ```sh
+   https://drive.google.com/drive/folders/1xZrmhVi2I5qzAbn1O-NYZQ3QJyTKq0kI?usp=sharing
+   ```
+
 1. **Dataset**: Contains the original dataset.
 2. **Preprocessed Dataset**: Python scripts and CSV files after cleaning raw data.
 3. **Scraping Data**: Scripts for scraping MITRE ATT&CK techniques.
